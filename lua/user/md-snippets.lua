@@ -1,0 +1,5 @@
+vim.keymap.set("i", ",c", "```<CR><++><CR>```<ESC>2kA")
+vim.keymap.set("i", ",b", "****<++><ESC>5hi")
+vim.keymap.set("i", ",i", "**<++><ESC>4hi")
+vim.keymap.set("i", ",f", "<ESC>/<++><CR>cf>")
+vim.keymap.set("i", ",i", "<img src=\"\" style=\"max_width:50%\"><ESC>F\";;i")
