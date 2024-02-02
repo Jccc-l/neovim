@@ -1,7 +1,7 @@
 require("user.lazy")
 require("user.options").load_defaults()
 require("user.md-snippets")
-require("user.keymap")
+--require("user.keymap")
 vim.g.mkdp_auto_start = 0
 vim.g.mkdp_auto_close = 1
 vim.g.mkdp_refresh_slow = 0
