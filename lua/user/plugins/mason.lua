@@ -6,7 +6,9 @@ return {
 		},
 		{
 			"neovim/nvim-lspconfig",
-		}
+		},
+		{ "mfussenegger/nvim-dap" },
+		{ "rcarriga/nvim-dap-ui" },
 	},
 	config = function()
 		---@class MasonSettings

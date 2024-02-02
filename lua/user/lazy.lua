@@ -30,4 +30,6 @@ require("lazy").setup({
 	require("user.plugins.mason"),
 	require("user.plugins.nvim-cmp"),
 
+	-- Keymap
+	require("user.plugins.which-key"),
 })
