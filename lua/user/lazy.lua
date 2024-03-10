@@ -12,6 +12,7 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
+	-- Color Themes
 	require("user.plugins.solarized"),
 	require("user.plugins.dracula"),
 	require("user.plugins.vim-snazzy"),
@@ -32,4 +33,7 @@ require("lazy").setup({
 
 	-- Keymap
 	require("user.plugins.which-key"),
+
+	-- File Explorer
+	require("user.plugins.nvim-tree")
 })

@@ -32,7 +32,8 @@ return {
 			l = {
 				name = "LSP",
 				f = { vim.lsp.buf.format, "Format" },
-			}
+			},
+			e = {require("nvim-tree.api").tree.toggle, "File Explorer"},
 		}
 		wk.register(mappings, opts)
 	end
