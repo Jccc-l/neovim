@@ -177,5 +177,11 @@ return {
 		require('lspconfig')['lua_ls'].setup {
 			capabilities = capabilities
 		}
+		require('lspconfig')['marksman'].setup {
+			capabilities = capabilities
+		}
+		require('lspconfig')['jdtls'].setup {
+			capabilities = capabilities
+		}
 	end
 }
