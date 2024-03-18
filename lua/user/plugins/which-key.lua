@@ -27,13 +27,20 @@ return {
 		local mappings = {
 			f = {
 				name = "Telescope",
-				a = { require('telescope').extensions.ctags_outline.outline, "Outline" },
+				a = { function()
+					require('telescope').extensions.ctags_outline.outline(require('telescope.themes')
+						.get_dropdown({}))
+				end, "Outline" },
+				b = { function() require('telescope.builtin').buffers(require("telescope.themes").get_dropdown({})) end, "Buffer" },
+				c = { function() require('telescope.builtin').commands(require("telescope.themes").get_ivy({})) end, "Command" },
+				f = { function() require('telescope.builtin').find_files(require('telescope.themes').get_dropdown({})) end, "Files" },
+				g = { function() require('telescope.builtin').live_grep() end, "Global Search" },
 			},
 			l = {
 				name = "LSP",
 				f = { vim.lsp.buf.format, "Format" },
 			},
-			e = {require("nvim-tree.api").tree.toggle, "File Explorer"},
+			e = { require("nvim-tree.api").tree.toggle, "File Explorer" },
 		}
 		wk.register(mappings, opts)
 	end
