@@ -29,6 +29,7 @@ require("lazy").setup({
 
 	-- LSP
 	require("user.plugins.mason"),
+	require("user.plugins.mason-lspconfig"),
 	require("user.plugins.nvim-cmp"),
 
 	-- Keymap
