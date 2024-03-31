@@ -24,3 +24,4 @@
 | nvim-lua/plenary.nvim               | 一些插件调用的库       |
 | junegunn/vim-easy-align             | 代码对齐               |
 | nvim-tree/nvim-tree                 | 文件资源管理器         |
+| folke/todo-comments.nvim            | 高亮todo注释           |

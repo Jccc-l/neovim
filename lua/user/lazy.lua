@@ -18,6 +18,9 @@ require("lazy").setup({
 	require("user.plugins.vim-snazzy"),
 	require("user.plugins.monokai"),
 
+	-- Todo Comments Hightlight
+	require("user.plugins.todo-comments"),
+
 	-- Markdown
 	require("user.plugins.nvim-surround"),
 	require("user.plugins.markdown-preview"),
