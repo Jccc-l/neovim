@@ -35,6 +35,8 @@ return {
 				c = { function() require('telescope.builtin').commands(require("telescope.themes").get_ivy({})) end, "Command" },
 				f = { function() require('telescope.builtin').find_files(require('telescope.themes').get_dropdown({})) end, "Files" },
 				g = { function() require('telescope.builtin').live_grep() end, "Global Search" },
+				-- TODO: Switch from vimscript to lua
+				t = { "<cmd>Telescope todo-comments<CR>", "TODO" },
 			},
 			l = {
 				name = "LSP",
