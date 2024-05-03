@@ -43,6 +43,8 @@ return {
 				f = { vim.lsp.buf.format, "Format" },
 			},
 			e = { require("nvim-tree.api").tree.toggle, "File Explorer" },
+
+			o = { "<cmd>SymbolsOutline<CR>", "Outline" },
 		}
 		wk.register(mappings, opts)
 	end

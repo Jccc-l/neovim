@@ -39,5 +39,8 @@ require("lazy").setup({
 	require("user.plugins.which-key"),
 
 	-- File Explorer
-	require("user.plugins.nvim-tree")
+	require("user.plugins.nvim-tree"),
+
+	-- Outline
+	require("user.plugins.symbols-outline"),
 })
