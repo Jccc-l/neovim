@@ -8,7 +8,7 @@ return {
 			-- A list of servers to automatically install if they're not already installed. Example: { "rust_analyzer@nightly", "lua_ls" }
 			-- This setting has no relation with the `automatic_installation` setting.
 			---@type string[]
-			ensure_installed = { "pylsp", "clangd", "lua_ls", "jdtls", "marksman" },
+			ensure_installed = { "clangd", "lua_ls", "jdtls", "marksman", "texlab", "lemminx" },
 
 			-- Whether servers that are set up (via lspconfig) should be automatically installed if they're not already installed.
 			-- This setting has no relation with the `ensure_installed` setting.
@@ -26,9 +26,6 @@ return {
 		})
 		local capabilities = require('cmp_nvim_lsp').default_capabilities()
 		-- Replace <YOUR_LSP_SERVER> with each lsp server you've enabled.
-		require('lspconfig')['pylsp'].setup {
-			capabilities = capabilities
-		}
 		require('lspconfig')['clangd'].setup {
 			capabilities = capabilities
 		}
@@ -39,6 +36,15 @@ return {
 			capabilities = capabilities
 		}
 		require('lspconfig')['jdtls'].setup {
+			capabilities = capabilities
+		}
+		require('lspconfig')['texlab'].setup {
+			capabilities = capabilities
+		}
+		-- require('lspconfig')['ltex'].setup {
+		-- 	capabilities = capabilities
+		-- }
+		require('lspconfig')['lemminx'].setup {
 			capabilities = capabilities
 		}
 	end

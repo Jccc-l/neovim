@@ -43,4 +43,6 @@ require("lazy").setup({
 
 	-- Outline
 	require("user.plugins.symbols-outline"),
+
+	require("user.plugins.nvim-treesitter"),
 })
