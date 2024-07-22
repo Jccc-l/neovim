@@ -8,7 +8,7 @@ return {
 			-- A list of servers to automatically install if they're not already installed. Example: { "rust_analyzer@nightly", "lua_ls" }
 			-- This setting has no relation with the `automatic_installation` setting.
 			---@type string[]
-			ensure_installed = { "clangd", "lua_ls", "jdtls", "marksman", "texlab", "lemminx" },
+			ensure_installed = { "clangd", "lua_ls", "jdtls", "marksman", "texlab", "lemminx", "pyright" },
 
 			-- Whether servers that are set up (via lspconfig) should be automatically installed if they're not already installed.
 			-- This setting has no relation with the `ensure_installed` setting.
@@ -41,9 +41,9 @@ return {
 		require('lspconfig')['texlab'].setup {
 			capabilities = capabilities
 		}
-		-- require('lspconfig')['ltex'].setup {
-		-- 	capabilities = capabilities
-		-- }
+		require('lspconfig')['pyright'].setup {
+			capabilities = capabilities
+		}
 		require('lspconfig')['lemminx'].setup {
 			capabilities = capabilities
 		}
